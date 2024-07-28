@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator | Generate a Qr Code Instantly</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include the QRCode.js library from a CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="log.png">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <h1>QR Code Generator</h1>
+                <p>Create your custom QR codes instantly.</p>
+            </div>
+        </header>
+        <main class="main-content">
+            <div class="container">
+                <section class="generator-section">
+                    <h2>Generate Your QR Code</h2>
+                    <div class="input-group">
+                        <input type="text" id="urlInput" placeholder="Enter URL here">
+                        <button id="generateBtn"><span>Generate QR Code</span></button>
+                    </div>
+                    <div id="qrcode-container" class="qrcode-container">
+                        <div id="qrcode"></div>
+                    </div>
+                    <button id="downloadBtn" class="hidden"><span>Download QR Code</span></button>
+                </section>
+                <section class="info-section">
+                    <h2>What is a QR Code?</h2>
+                    <p>A QR code (Quick Response code) is a type of matrix barcode that can store various types of information such as URLs, contact details, and more. Scan the code using a QR code reader on your smartphone to access the stored information.</p>
+                    <div class="image-container">
+                        <img src="https://img.freepik.com/premium-vector/woman-standing-front-mobile-phone-with-qr-barcode-concept-quick-response-code_675742-23.jpg?w=360" alt="Sample Image">
+                    </div>
+                </section>
+                <section class="how-it-works-section">
+                    <h2>How It Works</h2>
+                    <p>Using our QR Code Generator is simple:</p>
+                    <div class="image-container">
+                        <img src="https://cdn.dribbble.com/users/455304/screenshots/2574511/media/a5e83c4a912be5984518429c5a2ce1b5.gif" alt="Sample Image">
+                    </div>
+                    <ol>
+                        <li>Enter the URL you want to encode into the input field.</li>
+                        <li>Click the "Generate QR Code" button.</li>
+                        <li>Your QR code will be generated and displayed on the screen.</li>
+                        <li>Click the "Download QR Code" button to save your QR code as an image.</li>
+                    </ol>
+                </section>
+                <section class="about-section">
+                    <h2>About Our Service</h2>
+                    <p>Our QR Code Generator is a free tool that allows you to create QR codes quickly and easily. Whether you need a QR code for personal use, business, or marketing purposes, our generator is here to help. We provide a fast and reliable way to convert your URLs into QR codes that can be scanned and accessed by anyone.</p>
+                    <p>We prioritize simplicity and ease of use, ensuring that anyone can generate a QR code without any technical knowledge. Our service is free, with no hidden fees or subscriptions. Just enter your URL, generate your QR code, and download it instantly.</p>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 QR Code Generator. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
